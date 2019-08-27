@@ -7,12 +7,12 @@ const MovieList = (props) =>{
         <div className="container">
             <div className="row">
                 <div className="col s12">
-                    {
+                    {props.movies ? (
                         props.movies.map((mov,i)=>{
                             return (
                                 <Movie key={i} image = {mov.img[0]} movData={mov.data}/>
                             )
-                        })
+                        })) : ''
                     }
                 </div>
             </div>
