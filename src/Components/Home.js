@@ -61,7 +61,7 @@ class Home extends Component {
                     movies: movieTemp,
                     tvShows: tvShowTemp
                 })
-            }, 1000)
+            }, 1500)
         });
 
 
